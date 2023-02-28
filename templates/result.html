@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Finder</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="flex">
+      <div class="list">
+        <h2>You can make -</h2>
+        <ul>
+          <li>{{ predicted_dish }}</li>
+        </ul>
+      </div>
+      <div class="list">
+        <h3>Using these ingredients:</h2>
+        <ul>
+          {%for i in range(0, len)%}
+            <li>{{ing[i]}}</li>
+          {%endfor%}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
