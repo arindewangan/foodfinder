@@ -15,7 +15,9 @@
       <div class="list">
         <h2>You can make -</h2>
         <ul>
-          <li>{{ predicted_dish }}</li>
+          {%for i in range(0, len)%}
+            <li>{{predicted_dishes[i]}}</li>
+          {%endfor%}
         </ul>
       </div>
       <div class="list">
