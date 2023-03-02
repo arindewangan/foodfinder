@@ -2,7 +2,6 @@ from flask import Flask, render_template, request
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.ensemble import RandomForestClassifier
-
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -43,5 +42,5 @@ def get():
     ing = ingredients.split(',')
     return render_template('result.html', predicted_dishes=predicted_dishes,ingredients=ingredients,ing=ing,len = len(ing))
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
