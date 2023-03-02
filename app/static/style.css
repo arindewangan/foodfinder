@@ -61,7 +61,7 @@ ul li::before {
   outline: none;
   border-radius: 25px;
   transition: all 0.5s ease-in-out;
-  background-color: #22a6b3;
+  background-color: #22a6b38f;
   padding-right: 40px;
   color: #fff;
 }
