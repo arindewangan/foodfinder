@@ -3,6 +3,9 @@ The AI system takes a list of ingredients as input and generates a list of possi
 
 ## How to Run
 `pip install -r requirements.txt`
+
 `flask run`
-OR
-Run `build.sh`
+
+**OR**
+
+Run *build.sh*
